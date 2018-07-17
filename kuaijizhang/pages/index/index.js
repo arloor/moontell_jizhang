@@ -58,10 +58,10 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    wx.showToast({
-      title: '刷新',
-      duration: 200
-    })
+    // wx.showToast({
+    //   title: '刷新',
+    //   duration: 200
+    // })
   },
 
   /**
