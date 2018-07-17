@@ -1,0 +1,124 @@
+/* pages/index/index.wxss */
+
+.button_wrapper{
+  /* border-radius: 1px; */
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+
+
+#dao{
+  margin-top: 28rpx;
+  font-size: 35rpx;
+}
+
+.relative_icon{
+  size: 20rpx;
+}
+.block_wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: transparent;
+}
+
+.magrin_left{
+  margin-left: 20rpx;
+}
+
+.magrin_right{
+  margin-right: 20rpx;
+}
+
+.button_wrapper{
+  padding:2rpx 15rpx; 
+  font-size: 35rpx;
+   border: 6rpx solid #eeeeee; 
+   /* border: 0;  */
+}
+
+
+.flex_line{
+  display: flex;
+  justify-content: space-between
+}
+
+.card{
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  margin: 20rpx 20rpx;
+  box-shadow: 4px 1px 10px #cccccc;
+}
+
+.flex_col{
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+}
+
+.title{
+  font-size: 42rpx;
+}
+
+.total{
+  font-size: 70rpx;
+}
+.card_total{
+  padding: 10rpx 30rpx;
+  background-color: #dddddd;
+}
+.card_pay{
+/* background-color: #D6986F; */
+background-color: #ffcccc;
+}
+
+.card_earn{
+ background-color: #ccffe6; 
+/* background-color: #ccffff */
+}
+
+.card_dae{
+  /* background-color: #EFBC11; */
+  background-color: #ffe066
+}
+
+.br{
+  margin: 20rpx 20rpx;
+  border-top: 7rpx dotted #dddddd;
+}
+
+.type_time{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.num{
+  font-size: 100rpx;
+  text-align: center
+}
+.plan{
+  font-size: 25rpx;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+.info{
+  font-size: 35rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+
+.padding_left{
+  padding-left: 30rpx;
+}
+
+.padding_right{
+  padding-right: 30rpx;
+}
