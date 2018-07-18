@@ -1,13 +1,12 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/pay/pay",
     "pages/home/home",
-    
-    "pages/earn/earn",
-    "pages/pay/pay"
+    "pages/earn/earn"
   ],
   "window": {
-    "backgroundColor":"#EEEEEE",
+    "backgroundColor": "#EEEEEE",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
@@ -21,22 +20,9 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text":"首页",
-        "iconPath":"/icons/projectB.png",
+        "text": "账单",
+        "iconPath": "/icons/projectB.png",
         "selectedIconPath": "/icons/projectY.png"
-      },
-      {
-        "pagePath": "pages/pay/pay",
-        "text": "支出",
-       "iconPath": "/icons/minus-squareB.png",
-      "selectedIconPath": "/icons/minus-squareY.png"
-    
-      },
-      {
-        "pagePath": "pages/earn/earn",
-        "text": "收入",
-        "iconPath": "/icons/plus-squareB.png",
-        "selectedIconPath": "/icons/plus-squareY.png"
       },
       {
         "pagePath": "pages/home/home",
@@ -44,6 +30,7 @@
         "iconPath": "/icons/right-squareB.png",
         "selectedIconPath": "/icons/right-squareY.png"
       }
+      
     ]
   },
   "networkTimeout": {
@@ -51,3 +38,4 @@
     "downloadFile": 10000
   }
 }
+

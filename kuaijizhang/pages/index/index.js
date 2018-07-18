@@ -69,5 +69,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  totop:function(){
+    wx.pageScrollTo({
+      scrollTop: 0,
+    })
   }
 })
