@@ -6,10 +6,10 @@
     "pages/earn/earn"
   ],
   "window": {
-    "backgroundColor": "#EEEEEE",
+    "backgroundColor": "#ccccff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#ccccff",
+    "navigationBarTitleText": "快记账",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

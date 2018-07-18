@@ -1,11 +1,11 @@
 <view class="page">
 
 
-  <view class='card card_total atbottom'>
+  <view class='card card_newpay atend'>
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
         <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
-          <text>默撒账本</text>
+          <text>默认账本</text>
           <image src='/icons/down.png' class="icon"></image>
         </picker>
       </view>
@@ -35,90 +35,194 @@
     </view>
   </view>
 
-  <view class="board">
+  <!--分类开始  -->
+  <view class="board_unfixed card">
     <view class="col">
       <view class="row">
-        <button class='input_button input_button_left input_button_top'>
-          <image class='icon' src='/icons/number_1.png'></image>
+        <button class='class_button'>
+          饮食
         </button>
       </view>
       <view class="row">
-        <button class='input_button input_button_left'>
-          <image class='icon' src='/icons/number_4.png'></image>
+        <button class='class_button'>
+          交通
         </button>
       </view>
       <view class="row">
-        <button class='input_button input_button_left'>
-          <image class='icon' src='/icons/number_7.png'></image>
+        <button class='class_button'>
+          日用品
         </button>
       </view>
       <view class="row">
-        <button class='input_button input_button_left'>
-          <image class='icon' src='/icons/number_punctuation.png'></image>
-        </button>
-      </view>
-    </view>
-    <view class="col">
-      <view class="row">
-        <button class='input_button input_button_top'>
-          <image class='icon' src='/icons/number_2.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/number_5.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/number_8.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/number_0.png'></image>
-        </button>
-      </view>
-    </view>
-    <view class="col">
-      <view class="row">
-        <button class='input_button input_button_top'>
-          <image class='icon' src='/icons/number_3.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/number_6.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/number_9.png'></image>
-        </button>
-      </view>
-      <view class="row">
-        <button class='input_button'>
-          <image class='icon' src='/icons/back.png'></image>
+        <button class='class_button'>
+          旅游
         </button>
       </view>
     </view>
 
     <view class="col">
-      <view class="row border block_opr">
-        <view style='padding-top:30rpx'>
-          <text style='font-size:95rpx;color:#bbbbbb '>重置</text>
+      <view class="row">
+        <button class='class_button'>
+          娱乐
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          服饰
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          家居
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          人情
+        </button>
+      </view>
+    </view>
+    <view class="col">
+      <view class="row">
+        <button class='class_button'>
+          学习
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          丽人
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          酒水
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          聚会
+        </button>
+      </view>
+    </view>
+
+    <view class="col">
+      <view class="row">
+        <button class='class_button'>
+          充值
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          电子
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          住房
+        </button>
+      </view>
+      <view class="row">
+        <button class='class_button'>
+          不说
+        </button>
+      </view>
+    </view>
+
+
+
+  </view>
+  <!--分类结束  -->
+
+  <!--输入面板开始  -->
+  <view class="fix_bottom card_bottom">
+    <view class='flex_line_beizhu'>
+      <input type='text' placeholder='请输入备注'></input>
+    </view>
+    <view class="board">
+      <view class="col">
+        <view class="row">
+          <button class='input_button input_button_left input_button_top'>
+            <image class='icon' src='/icons/number_1.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button input_button_left'>
+            <image class='icon' src='/icons/number_4.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button input_button_left'>
+            <image class='icon' src='/icons/number_7.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button input_button_left'>
+            <image class='icon' src='/icons/number_punctuation.png'></image>
+          </button>
         </view>
       </view>
-      <view class="row border block_opr">
-        <view style='padding-top:30rpx;'>
-          <text style='font-size:95rpx;color:#555555 '>完成</text>
+      <view class="col">
+        <view class="row">
+          <button class='input_button input_button_top'>
+            <image class='icon' src='/icons/number_2.png'></image>
+          </button>
         </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/number_5.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/number_8.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/number_0.png'></image>
+          </button>
+        </view>
+      </view>
+      <view class="col">
+        <view class="row">
+          <button class='input_button input_button_top'>
+            <image class='icon' src='/icons/number_3.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/number_6.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/number_9.png'></image>
+          </button>
+        </view>
+        <view class="row">
+          <button class='input_button'>
+            <image class='icon' src='/icons/back.png'></image>
+          </button>
+        </view>
+      </view>
+
+      <view class="col">
+        <view class="row border block_opr">
+          <view style='padding-top:42rpx;text-align:center'>
+            <text style='font-size:50rpx;color:#bbbbbb '>重置</text>
+          </view>
+        </view>
+        <view class="row border block_opr">
+          <view style='padding-top:42rpx;text-align:center'>
+            <text style='font-size:50rpx;color:#555555 '>完成</text>
+          </view>
+        </view>
+
       </view>
 
     </view>
 
   </view>
-
-
+  <!--输入面板结束  -->
 
 </view>

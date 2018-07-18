@@ -3,15 +3,12 @@
   <view class="flex_line">
     <view class="block_wrapper  margin_left">
       <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
-        <button class="zhangben button_wrapper">默撒账本
+        <button class="zhangben button_wrapper">默认账本
           <image src='/icons/down.png' class="icon"></image>
         </button>
       </picker>
     </view>
     <view class="block_wrapper  margin_right">
-
-
-
       <button class="button_wrapper">包含计划</button>
       <button class="button_wrapper" open-type='share'>分享</button>
     </view>
