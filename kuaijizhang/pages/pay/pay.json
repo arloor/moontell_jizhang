@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "支出",
-  "backgroundColor": "#fff"
+  "backgroundColor": "#fff",
+  "navigationBarBackgroundColor":"#fcc"
 }

@@ -6,9 +6,9 @@
     "pages/earn/earn"
   ],
   "window": {
-    "backgroundColor": "#ccccff",
+    "backgroundColor": "#cccccc",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ccccff",
+
     "navigationBarTitleText": "快记账",
     "navigationBarTextStyle": "black"
   },

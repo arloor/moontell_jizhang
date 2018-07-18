@@ -2,7 +2,7 @@
 <view class="page">
 
 
-  <view class='card card_newearn atend'>
+  <view class='card_newearn atend'>
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
         <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">

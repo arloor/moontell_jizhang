@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "收入",
-  "backgroundColor":"#fff"
+  "backgroundColor":"#fff",
+  "navigationBarBackgroundColor": "#ccffe6"
 }

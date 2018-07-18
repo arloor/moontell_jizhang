@@ -1,16 +1,80 @@
-<!--index.wxml-->
+<!--index.wxml {{userInfo.nickName}}-->
 <view class="page">
-  <view class="user_detail_card" style='text-align:center'>
+  <view class="user_detail_card" style='-webkit-text-align:center'>
     <view class="flex_line_start">
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="user-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <block  >
+        <image wx:if="{{hasUserInfo && canIUse}}" bindtap="bindViewTap" class="user-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+       <view wx:if="{{hasUserInfo && canIUse}}" > <text class="nickname">剪不惊的小本本</text></view>
+       <button  open-type="getUserInfo" class='getUserButton' bindgetuserinfo="getUserInfo">更新信息</button>
       </block>
     </view>
 
   </view>
 </view>
 <view class="container">
-
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
+<view>aaa</view>
 </view>

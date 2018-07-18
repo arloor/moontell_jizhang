@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 250rpx 0 100rpx 0rpx;
   box-sizing: border-box;
 }
 
@@ -93,11 +93,11 @@
 
 .card_total {
   padding: 10rpx 30rpx;
-  background-color: #ddd;
+  background-color: #eeeeee;
 }
 
 .card_newpay {
-  padding: 10rpx 30rpx;
+  padding: 20rpx 30rpx;
   background-color: #fcc;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .card_newearn {
-  padding: 10rpx 30rpx;
+  padding: 20rpx 30rpx;
   background-color: #ccffe6;
 }
 
@@ -165,8 +165,6 @@
   justify-content: space-around;
 }
 
-
-
 .flex_line_beizhu {
   display: flex;
   justify-content: flex-start;
@@ -216,23 +214,34 @@
 }
 
 .input_button {
-  border: 0.5rpx solid #ccc;
   border-radius: 0rpx;
   font-size: 18rpx;
   padding: 7rpx 2rpx;
   /* background-color: #eee; */
 }
 
-.class_button {
+.input_button::after {
   border: 0.5rpx solid #ccc;
+  border-radius: 0rpx;
+}
+
+.class_button {
   border-radius: 0rpx;
   font-size: 30rpx;
   padding: 12rpx 2rpx;
   background-color: #efefef;
 }
 
+/*设置border要放在after  */
+
+.class_button::after {
+  border: 0.5rpx solid #ccc;
+  border-radius: 0rpx;
+}
+
 .button_ok {
   height: 160rpx;
+  border-radius: 0;
 }
 
 .icon_opr {
@@ -251,6 +260,9 @@
 
 .user_detail_card {
   background-color: #ccf;
+    position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .user-avatar {
@@ -265,6 +277,22 @@
   display: flex;
   justify-content: flex-start;
   font-size: 70rpx;
-  align-items: flex-end;
+  align-items: center;
   padding: 15rpx 20rpx;
+}
+
+.nickname{
+  font-size: 45rpx;
+  color: #888;
+}
+
+.getUserButton {
+  font-size: 30rpx;
+  color: #888;
+  font-weight: bolder;
+  background-color: "#ccf";
+  border: 1rpx solid #000;
+}
+.getUserButton::after{
+   border: 0rpx solid #000;
 }

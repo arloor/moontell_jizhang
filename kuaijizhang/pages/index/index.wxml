@@ -1,54 +1,55 @@
 <!-- <image class="totop" src='/icons/totop.png' catchtap='totop'></image> -->
-<view class="page">
-  <view class="flex_line">
-    <view class="block_wrapper  margin_left">
-      <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
-        <button class="zhangben button_wrapper">默认账本
-          <image src='/icons/down.png' class="icon"></image>
-        </button>
-      </picker>
-    </view>
-    <view class="block_wrapper  margin_right">
-      <button class="button_wrapper">包含计划</button>
-      <button class="button_wrapper" open-type='share'>分享</button>
-    </view>
-
-  </view>
-
-  <view class='card card_total block_wrapper'>
-    <view class='flex_col'>
-      <!-- <view class='title'>收入</view> -->
-      <view class="total">
-        <navigator url='/pages/earn/earn'>
-          <image src="/icons/plus-circle.png" class="oper_button"></image>
-        </navigator>
+ <view class=''> 
+  <view class="card_total">
+    <view class="flex_line">
+      <view class="block_wrapper  margin_left">
+        <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
+          <button class="zhangben button_wrapper">默认账本
+            <image src='/icons/down.png' class="icon"></image>
+          </button>
+        </picker>
       </view>
-    </view>
-    <view class='flex_col'>
-      <!-- <view class='title'>当月</view> -->
-      <picker mode="date" value="2018-07" fields="month" start="2018-01" end="2050-12">
-        <view>
-          <text>2018-07</text>
+      <view class="block_wrapper  margin_right">
+        <button class="button_wrapper">包含计划</button>
+        <button class="button_wrapper" open-type='share'>分享</button>
+      </view>
 
-          <text>总计</text>
-          <image src='/icons/down.png' class="icon"></image>
+    </view>
+
+    <view class=' card_total block_wrapper'>
+      <view class='flex_col'>
+        <!-- <view class='title'>收入</view> -->
+        <view class="total">
+          <navigator url='/pages/earn/earn'>
+            <image src="/icons/plus-circle.png" class="oper_button"></image>
+          </navigator>
         </view>
-
-      </picker>
-      <view class="total">
-        <text>-10086</text>
       </view>
-    </view>
-    <view class='flex_col'>
-      <!-- <view class='title'>支出</view> -->
-      <view class="total">
-        <navigator url='/pages/pay/pay'>
-          <image src="/icons/minus-circle.png" class="oper_button"></image>
-        </navigator>
+      <view class='flex_col'>
+        <!-- <view class='title'>当月</view> -->
+        <picker mode="date" value="2018-07" fields="month" start="2018-01" end="2050-12">
+          <view>
+            <text>2018-07</text>
+
+            <text>总计</text>
+            <image src='/icons/down.png' class="icon"></image>
+          </view>
+
+        </picker>
+        <view class="total">
+          <text>-10086</text>
+        </view>
+      </view>
+      <view class='flex_col'>
+        <!-- <view class='title'>支出</view> -->
+        <view class="total">
+          <navigator url='/pages/pay/pay'>
+            <image src="/icons/minus-circle.png" class="oper_button"></image>
+          </navigator>
+        </view>
       </view>
     </view>
   </view>
-
   <view class='br'>
   </view>
 
