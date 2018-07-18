@@ -1,10 +1,10 @@
-<!--index.wxml {{userInfo.nickName}}-->
+<!--index.wxml -->
 <view class="page">
   <view class="user_detail_card" style='-webkit-text-align:center'>
     <view class="flex_line_start">
       <block  >
         <image wx:if="{{hasUserInfo && canIUse}}" bindtap="bindViewTap" class="user-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-       <view wx:if="{{hasUserInfo && canIUse}}" > <text class="nickname">剪不惊的小本本</text></view>
+       <view wx:if="{{hasUserInfo && canIUse}}" > <text class="nickname">{{userInfo.nickName}}</text></view>
        <button  open-type="getUserInfo" class='getUserButton' bindgetuserinfo="getUserInfo">更新信息</button>
       </block>
     </view>
