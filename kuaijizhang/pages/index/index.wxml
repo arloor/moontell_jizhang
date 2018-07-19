@@ -1,5 +1,5 @@
 <!-- <image class="totop" src='/icons/totop.png' catchtap='totop'></image> -->
- <view class=''> 
+<view class=''>
   <view class="card_total">
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
@@ -21,9 +21,9 @@
         <!-- <view class='title'>收入</view> -->
         <view class="total">
           <navigator url='/pages/earn/earn'>
-             <!-- <image src="/icons/plus-circle.png" class="oper_button"></image>  -->
-              <image src="/icons/forward-sorting.png" class="oper_button"></image>  
-             <!-- <image src="/icons/add.png" class="oper_button"></image>  -->
+            <!-- <image src="/icons/plus-circle.png" class="oper_button"></image>  -->
+            <image src="/icons/forward-sorting.png" class="oper_button"></image>
+            <!-- <image src="/icons/add.png" class="oper_button"></image>  -->
           </navigator>
         </view>
       </view>
@@ -46,9 +46,9 @@
         <!-- <view class='title'>支出</view> -->
         <view class="total">
           <navigator url='/pages/pay/pay'>
-             <!-- <image src="/icons/minus-circle.png" class="oper_button"></image>  -->
-              <image src="/icons/reverse-sorting.png" class="oper_button"></image>  
-             <!-- <image src="/icons/minus.png" class="oper_button"></image>  -->
+            <!-- <image src="/icons/minus-circle.png" class="oper_button"></image>  -->
+            <image src="/icons/reverse-sorting.png" class="oper_button"></image>
+            <!-- <image src="/icons/minus.png" class="oper_button"></image>  -->
           </navigator>
         </view>
       </view>

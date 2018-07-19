@@ -11,8 +11,9 @@
 }
 
 /*button点击时的样式  */
-.button-hover{
-  background: #dddddd;
+
+.button-hover {
+  background: #ddd;
 }
 
 .icon {
@@ -297,13 +298,12 @@
   font-weight: bolder;
   background-color: "#ccf";
   border: 1rpx solid #000;
-    margin-top: 46rpx;
+  margin-top: 46rpx;
   margin-bottom: 46rpx;
 }
 
 .getUserButton::after {
   border: 0rpx solid #000;
-
 }
 
 .button_board {
@@ -323,22 +323,20 @@
   border: 0;
   background: transparent;
   padding: 5rpx 40rpx;
-font-size: 42rpx;
+  font-size: 42rpx;
 }
 
 .button_opt::after {
   border: 0;
-  -webkit-tap-highlight-color:#000000;
+  -webkit-tap-highlight-color: #000;
 }
-
-
 
 .icon_enter {
   width: 50rpx;
   height: 50rpx;
 }
 
-.icon_title{
+.icon_title {
   display: flex;
   align-items: center;
   justify-content: flex-start;
