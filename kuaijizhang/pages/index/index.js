@@ -9,16 +9,33 @@ Page({
   },
   longPressCard:function(e){
     console.log(e);
-    this.setData({
-      top:e.detail.y,
-      right:e.detail.x
+    wx.showToast({
+      title: '显示删除和编辑',
+      duration: 500
+    })
+  },
+  anyTap:function(){
+    wx.showToast({
+      title: '隐藏删除和编辑',
+      duration:500
+    })
+  },
+  doDelete:function(e){
+    wx.showToast({
+      title: '进行删除',
+      duration: 500
+    })
+  },
+  doEdit: function(e) {
+    wx.showToast({
+      title: '进行编辑',
+      duration: 500
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**

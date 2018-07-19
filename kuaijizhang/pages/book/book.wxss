@@ -1,1 +1,123 @@
 /* pages/book/book.wxss */
+
+page{
+  height: 100%;
+
+}
+
+.title{
+  text-align: center;
+  font-size: 80rpx;
+}
+
+.book{
+  background-color: #ddd;
+  border: 2px solid #999;
+  border-radius: 10px;
+  margin: 20rpx 20rpx;
+  box-shadow: 4px 1px 10px #999;
+  font-size: 45rpx;
+}
+
+.name_line{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30rpx 10rpx;
+}
+
+.info_line{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30rpx 10rpx;
+}
+
+.user_ctrl_line{
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  margin: 30rpx 10rpx;
+}
+
+.ctrl_line{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.delete_button{
+  font-size: 32rpx;
+  background-color: transparent;
+  color: #aaa;
+}
+
+.button-hover{
+   background-color: #ccc;
+}
+
+.user_info_block_wrapper{
+  display: flex;
+  flex-flow: row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+input{
+  color:#333;
+  font-size: 42rpx;
+}
+
+.user_info_block{
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+  margin: 0rpx 0rpx 20rpx 0rpx;
+}
+
+.label{
+  font-size: 40rpx;
+  width:400rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #888;
+}
+
+.avatar {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border: 1rpx solid #fff;
+}
+
+.view_button::after{
+  border: none;
+}
+
+.view_button{
+/* position:relative;
+display:inline;
+margin-left:0rpx;
+margin-right:0rpx;
+padding-left:0rpx;
+padding-right:0rpx;
+box-sizing:border-box;
+text-align:center;
+text-decoration:none;
+line-height:auto;
+border-radius:5px;
+-webkit-tap-highlight-color:transparent;
+overflow:hidden;
+color:#000000; */
+height:130rpx;
+width:100%;
+padding:0;
+border-color:#fff;
+margin:0rpx;
+background-color:transparent;
+}

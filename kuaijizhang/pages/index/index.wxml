@@ -1,9 +1,9 @@
 <!-- <image class="totop icon_opr" src='/icons/totop.png'  catchtap='totop'></image>  -->
-<view class=''>
+<view class='' catchtap='anyTap'>
   <view class="card_total">
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
-        <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
+        <picker mode="date" value="{{date}}" start="2018-01" end="2050-12" >
           <button class="zhangben button_wrapper">默认账本
             <image src='/icons/down.png' class="icon"></image>
           </button>
@@ -68,12 +68,12 @@
     </view>
 
     <view class='num_options'>
-      <image class="icon_options" src='/icons/delete.png'></image>
+      <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image>
       <view class='num'>
         <text>-3456</text>
         <text class="plan">计划</text>
       </view>
-      <image class="icon_options" src='/icons/edit.png'></image>
+      <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image>
     </view>
 
 

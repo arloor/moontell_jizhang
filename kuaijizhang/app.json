@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/book/book",
     "pages/index/index",
+    "pages/book/book",
     "pages/pay/pay",
     "pages/home/home",
     "pages/earn/earn",
@@ -10,7 +10,7 @@
     "pages/statics/statics"
   ],
   "window": {
-    "backgroundColor": "#cccccc",
+    "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "减法记账",
     "navigationBarTextStyle": "black",
