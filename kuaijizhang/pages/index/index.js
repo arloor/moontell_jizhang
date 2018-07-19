@@ -7,7 +7,13 @@ Page({
   data: {
 
   },
-
+  longPressCard:function(e){
+    console.log(e);
+    this.setData({
+      top:e.detail.y,
+      right:e.detail.x
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

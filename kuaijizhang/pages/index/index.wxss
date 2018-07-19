@@ -8,6 +8,18 @@
 
 .totop {
   position: fixed;
-  bottom: 20rpx;
-  right: 30rpx;
+  top: 200rpx;
+  /* bottom: 20rpx;
+  right: 30rpx; */
+}
+
+.num_options{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon_options{
+  height: 100rpx;
+  width: 100rpx;
 }
