@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/book/book",
     "pages/index/index",
     "pages/pay/pay",
     "pages/home/home",
     "pages/earn/earn",
-    "pages/book/book",
     "pages/plans/plans",
     "pages/about/about",
     "pages/statics/statics"
