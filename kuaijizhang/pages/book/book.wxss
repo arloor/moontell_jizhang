@@ -14,7 +14,7 @@ page{
   background-color: #ddd;
   border: 2px solid #999;
   border-radius: 10px;
-  margin: 20rpx 20rpx;
+  margin: 0rpx 20rpx 20rpx 20rpx;
   box-shadow: 4px 1px 10px #999;
   font-size: 45rpx;
 }
@@ -51,9 +51,9 @@ page{
   background-color: transparent;
   color: #aaa;
 }
-
-.button-hover{
-   background-color: #ccc;
+.icon_enter_large{
+  width: 65rpx;
+  height: 65rpx;
 }
 
 .user_info_block_wrapper{

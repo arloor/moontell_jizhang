@@ -1,9 +1,20 @@
 <!--pages/book/book.wxml-->
 <view class='page'>
 
-  <view class='title'>我创建的</view>
+     <view class="button_board">
+    <button class="button_opt" style='border:none;padding:0rpx 40rpx;margin-bottom:0rpx;font-size:55rpx;'>
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter_large' src='/icons/document_fill.png'></image>
+          <text>我创建的</text>
+        </view>
+        <image class='icon_enter_large' src='/icons/integral_fill.png'></image>
+      </view>
+    </button>
+  </view> 
 
   <view class="book" catchlongpress='onLongPressCard'>
+
     <view class="name_line">
       <view class='label'>账本名称</view>
       <input placeholder='请输入账本名' value="默认账本"></input>
@@ -78,11 +89,22 @@
       </view>
     </view>
 
-    
-  </view>
-  
 
-  <view class='title'>与我共享的</view>
+  </view>
+
+
+   <view class="button_board">
+    <button class="button_opt" style='border:none;padding:0rpx 40rpx;margin-bottom:0rpx;font-size:55rpx;'>
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter_large' src='/icons/document_fill.png'></image>
+          <text>与我共享的</text>
+        </view>
+        <image class='icon_enter_large' src='/icons/integral_fill.png'></image>
+      </view>
+    </button>
+  </view> 
+
   <view class="book" catchlongpress='onLongPressCard'>
     <view class="name_line">
       <view class='label'>账本名称</view>
@@ -90,7 +112,7 @@
     </view>
     <view class="info_line">
       <view class='label'> 账本描述</view>
-      <input placeholder='请输入账本信息' value="自动为您生成的账本"  disabled='true'></input>
+      <input placeholder='请输入账本信息' value="自动为您生成的账本" disabled='true'></input>
     </view>
     <view class='user_ctrl_line'>
       <view class='label'>共享用户</view>
@@ -108,7 +130,7 @@
         <image class="avatar" src="/images/author.jpg"></image>
         <view>五个字昵称</view>
       </view>
-      <view class='user_info_block'catchlongpress='onLongPressAvatarNotMineBook'>
+      <view class='user_info_block' catchlongpress='onLongPressAvatarNotMineBook'>
         <image class="avatar" src="/images/author.jpg"></image>
         <view>五个字昵称</view>
       </view>
@@ -119,47 +141,50 @@
 
 
 
-  <view class='title'>新建账本</view>
+<view class="button_board">
+    <button class="button_opt" style='border:none;padding:0rpx 40rpx;margin-bottom:0rpx;font-size:55rpx;'>
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter_large' src='/icons/document_fill.png'></image>
+          <text>新建账本</text>
+        </view>
+        <image class='icon_enter_large' src='/icons/integral_fill.png'></image>
+      </view>
+    </button>
+  </view> 
 
   <view class="book" catchlongpress='onLongPressCard'>
     <view class="name_line">
       <view class='label'>账本名称</view>
-      <input placeholder='请输入账本名' value="默认账本"></input>
+      <input placeholder='' value="" disabled='true'></input>
     </view>
     <view class="info_line">
       <view class='label'> 账本描述</view>
-      <input placeholder='请输入账本信息' value="自动为您生成的账本"></input>
+      <input placeholder='' value="" disabled='true'></input>
     </view>
     <view class='user_ctrl_line'>
-      <view class='label'>共享用户</view>
+      <view class='label'>TIPS</view>
       <!-- <view class='ctrl_line'>
         <button class='delete_button'>删除所选用户</button>
       </view> -->
+      <view class='label'>长按进行编辑哦</view>
     </view>
 
-    <view class='user_info_block_wrapper'>
-      <view class='user_info_block' catchlongpress='onLongPressAvatar'>
-        <image class="avatar" src="/images/author.jpg"></image>
-        <view>五个字昵称</view>
-      </view>
-      <view class='user_info_block' catchlongpress='onLongPressAvatar'>
-        <image class="avatar" src="/images/author.jpg"></image>
-        <view>五个字昵称</view>
-      </view>
-      <view class='user_info_block' catchlongpress='onLongPressAvatar'>
-        <image class="avatar" src="/images/author.jpg"></image>
-        <view>五个字昵称</view>
-      </view>
-      <view class='user_info_block'>
-        <button open-type='share' class="view_button">
-          <image class="avatar" src="/icons/add.png"></image>
-        </button>
-        <view>共享</view>
-      </view>
-    </view>
+
   </view>
 
+  <view class="button_board">
 
+    <navigator url='/pages/hidebook/hidebook'>
+      <button class="button_opt" style='border:none;padding:0rpx 40rpx;margin-bottom:0rpx;font-size:55rpx;'>
+        <view class='button_flex'>
+          <view class='icon_title'>
+            <image class='icon_enter_large' src='/icons/document_fill.png'></image>
+            <text>查看隐藏账本</text>
+          </view>
+          <image class='icon_enter_large' src='/icons/play_fill.png'></image>
+        </view>
+      </button>
+    </navigator>
+  </view>
 </view>
-
-<view>隐藏账本</view>
