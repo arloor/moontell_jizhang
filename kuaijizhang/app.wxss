@@ -320,7 +320,8 @@
 
 .button_opt {
   width: 100%;
-  border: 0;
+  border-bottom: 0.5rpx solid #ddd;
+  border-radius: 0rpx;
   background: transparent;
   padding: 5rpx 40rpx;
   font-size: 42rpx;
