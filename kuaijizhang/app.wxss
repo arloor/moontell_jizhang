@@ -297,10 +297,13 @@
   font-weight: bolder;
   background-color: "#ccf";
   border: 1rpx solid #000;
+    margin-top: 46rpx;
+  margin-bottom: 46rpx;
 }
 
 .getUserButton::after {
   border: 0rpx solid #000;
+
 }
 
 .button_board {
