@@ -3,14 +3,18 @@
     "pages/index/index",
     "pages/pay/pay",
     "pages/home/home",
-    "pages/earn/earn"
+    "pages/earn/earn",
+    "pages/book/book",
+    "pages/plans/plans",
+    "pages/about/about",
+    "pages/statics/statics"
   ],
   "window": {
     "backgroundColor": "#cccccc",
     "backgroundTextStyle": "light",
-
-    "navigationBarTitleText": "快记账",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "减法记账",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#eeeeee"
   },
   "tabBar": {
     "color": "#2c2c2c",
@@ -30,7 +34,6 @@
         "iconPath": "/icons/right-squareB.png",
         "selectedIconPath": "/icons/right-squareY.png"
       }
-      
     ]
   },
   "networkTimeout": {
@@ -38,4 +41,3 @@
     "downloadFile": 10000
   }
 }
-

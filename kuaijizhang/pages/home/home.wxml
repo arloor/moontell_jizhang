@@ -14,48 +14,57 @@
   </view>
 </view>
 <view class="container">
-  <view class="button_board card">
+  <!-- 下面的button_board 可以考虑加 card；card表示加圆角边框 -->
+  <view class="button_board">
 
-    <button class="button_opt">
-      <view class='button_flex'>
-        <view class='icon_title'>
-          <image class='icon_enter' src='/icons/dynamic_fill.png'></image>
-          <text>查看统计</text>
+    <navigator url='/pages/statics/statics'>
+      <button class="button_opt">
+        <view class='button_flex'>
+          <view class='icon_title'>
+            <image class='icon_enter' src='/icons/dynamic_fill.png'></image>
+            <text>查看统计</text>
+          </view>
+          <image class='icon_enter' src='/icons/play_fill.png'></image>
         </view>
-        <image class='icon_enter' src='/icons/play_fill.png'></image>
-      </view>
-    </button>
+      </button>
+    </navigator>
 
-    <button class="button_opt">
-      <view class='button_flex'>
-        <view class='icon_title'>
-          <image class='icon_enter' src='/icons/setup_fill.png'></image>
-          <text>计划管理</text>
+    <navigator url='/pages/plans/plans'>
+      <button class="button_opt">
+        <view class='button_flex'>
+          <view class='icon_title'>
+            <image class='icon_enter' src='/icons/setup_fill.png'></image>
+            <text>计划管理</text>
+          </view>
+          <image class='icon_enter' src='/icons/play_fill.png'></image>
         </view>
-        <image class='icon_enter' src='/icons/play_fill.png'></image>
-      </view>
-    </button>
+      </button>
+    </navigator>
 
-    <button class="button_opt">
-      <view class='button_flex'>
-        <view class='icon_title'>
-          <image class='icon_enter' src='/icons/activity_fill.png'></image>
-          <text>账本设置</text>
+    <navigator url='/pages/book/book'>
+      <button class="button_opt">
+        <view class='button_flex'>
+          <view class='icon_title'>
+            <image class='icon_enter' src='/icons/activity_fill.png'></image>
+            <text>账本设置</text>
+          </view>
+          <image class='icon_enter' src='/icons/play_fill.png'></image>
         </view>
-        <image class='icon_enter' src='/icons/play_fill.png'></image>
-      </view>
-    </button>
+      </button>
+    </navigator>
 
-    <button class="button_opt">
-      <view class='button_flex'>
-        <view class='icon_title'>
-          <!-- <image class='icon_enter' src='/icons/integral_fill.png'></image> -->
-          <image class='icon_enter' src='/icons/remind_fill.png'></image>
-          <text>关于作者</text>
+    <navigator url='/pages/about/about'>
+      <button class="button_opt">
+        <view class='button_flex'>
+          <view class='icon_title'>
+            <!-- <image class='icon_enter' src='/icons/integral_fill.png'></image> -->
+            <image class='icon_enter' src='/icons/remind_fill.png'></image>
+            <text>关于作者</text>
+          </view>
+          <image class='icon_enter' src='/icons/play_fill.png'></image>
         </view>
-        <image class='icon_enter' src='/icons/play_fill.png'></image>
-      </view>
-    </button>
+      </button>
+    </navigator>
 
 
   </view>

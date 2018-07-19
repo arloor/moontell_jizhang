@@ -1,0 +1,15 @@
+<view class='about_container info'>
+
+  <view style='font-size:45rpx'>作者：翦不惊</view>
+  <view class='br'>
+  </view>
+  <view style='font-size:45rpx'>微信号:njulgh</view>
+  <view class='br'>
+  </view>
+  <view class='br'>
+  </view>
+</view>
+<view class='about_container'>
+  <image class='square_image' src="/images/pay8.png"></image>
+  <view style='font-size:38rpx'>..........打赏一下吧..........</view>
+</view>
