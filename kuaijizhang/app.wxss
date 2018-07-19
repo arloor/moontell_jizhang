@@ -6,8 +6,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 250rpx 0 100rpx 0rpx;
+  padding: 200rpx 0 0rpx 0rpx;
   box-sizing: border-box;
+}
+
+/*button点击时的样式  */
+.button-hover{
+  background: #dddddd;
 }
 
 .icon {
@@ -93,7 +98,7 @@
 
 .card_total {
   padding: 10rpx 30rpx;
-  background-color: #eeeeee;
+  background-color: #c2d6d6;
 }
 
 .card_newpay {
@@ -260,9 +265,9 @@
 
 .user_detail_card {
   background-color: #ccf;
-    position: fixed;
+  position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .user-avatar {
@@ -278,10 +283,10 @@
   justify-content: flex-start;
   font-size: 70rpx;
   align-items: center;
-  padding: 15rpx 20rpx;
+  padding: 15rpx 60rpx;
 }
 
-.nickname{
+.nickname {
   font-size: 45rpx;
   color: #888;
 }
@@ -293,6 +298,45 @@
   background-color: "#ccf";
   border: 1rpx solid #000;
 }
-.getUserButton::after{
-   border: 0rpx solid #000;
+
+.getUserButton::after {
+  border: 0rpx solid #000;
+}
+
+.button_board {
+  width: 96%;
+}
+
+.button_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.button_opt {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 5rpx 40rpx;
+font-size: 42rpx;
+}
+
+.button_opt::after {
+  border: 0;
+  -webkit-tap-highlight-color:#000000;
+}
+
+
+
+.icon_enter {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.icon_title{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }

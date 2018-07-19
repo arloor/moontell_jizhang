@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/*button点击时的样式  */
+.button-hover{
+  background: #dddddd;
+}

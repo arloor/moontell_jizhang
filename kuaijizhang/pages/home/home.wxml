@@ -2,79 +2,61 @@
 <view class="page">
   <view class="user_detail_card" style='-webkit-text-align:center'>
     <view class="flex_line_start">
-      <block  >
+      <block>
         <image wx:if="{{hasUserInfo && canIUse}}" bindtap="bindViewTap" class="user-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-       <view wx:if="{{hasUserInfo && canIUse}}" > <text class="nickname">{{userInfo.nickName}}</text></view>
-       <button  open-type="getUserInfo" class='getUserButton' bindgetuserinfo="getUserInfo">更新信息</button>
+        <view wx:if="{{hasUserInfo && canIUse}}">
+          <text class="nickname">{{userInfo.nickName}}</text>
+        </view>
+        <button open-type="getUserInfo" class='getUserButton' bindgetuserinfo="getUserInfo">更新信息</button>
       </block>
     </view>
 
   </view>
 </view>
 <view class="container">
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
-<view>aaa</view>
+  <view class="button_board card">
+
+    <button class="button_opt">
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter' src='/icons/dynamic_fill.png'></image>
+          <text>查看统计</text>
+        </view>
+        <image class='icon_enter' src='/icons/play_fill.png'></image>
+      </view>
+    </button>
+
+    <button class="button_opt">
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter' src='/icons/setup_fill.png'></image>
+          <text>计划管理</text>
+        </view>
+        <image class='icon_enter' src='/icons/play_fill.png'></image>
+      </view>
+    </button>
+
+    <button class="button_opt">
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <image class='icon_enter' src='/icons/activity_fill.png'></image>
+          <text>账本设置</text>
+        </view>
+        <image class='icon_enter' src='/icons/play_fill.png'></image>
+      </view>
+    </button>
+
+    <button class="button_opt">
+      <view class='button_flex'>
+        <view class='icon_title'>
+          <!-- <image class='icon_enter' src='/icons/integral_fill.png'></image> -->
+          <image class='icon_enter' src='/icons/remind_fill.png'></image>
+          <text>关于作者</text>
+        </view>
+        <image class='icon_enter' src='/icons/play_fill.png'></image>
+      </view>
+    </button>
+
+
+  </view>
 </view>

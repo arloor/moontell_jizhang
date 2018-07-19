@@ -1,1 +1,6 @@
 /* pages/earn/earn.wxss */
+
+/* button点击时的样式   */
+/* .button-hover{
+  background: #ccffe6;
+} */

@@ -1,1 +1,5 @@
 /* pages/pay/pay.wxss */
+/*button点击时的样式  */
+/* .button-hover{
+  background: #ffcccc;
+} */
