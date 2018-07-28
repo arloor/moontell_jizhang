@@ -58,7 +58,7 @@
   <!-- <view class='br'>
   </view> -->
 
-  <view class='card card_pay' data-ooo='1' style="dispaly:float;left:-500rpx;" catchlongpress='longPressCard'>
+  <view class='card card_pay' data-ooo='1' catchlongpress='longPressCard'>
     <view class='type_time'>
       <view class="type">
         <text class='padding_left'>大类：小类</text>
