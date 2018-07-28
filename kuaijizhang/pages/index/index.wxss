@@ -19,7 +19,9 @@
   justify-content: space-around;
 }
 
-.icon_options{
-  height: 100rpx;
-  width: 100rpx;
+
+
+page{
+  height: 100%;
+  background-color: #eee;
 }

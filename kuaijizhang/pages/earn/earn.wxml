@@ -59,7 +59,7 @@
       </view>
       <view class="row">
         <button class='class_button'>
-          投资
+          红包
         </button>
       </view>
     </view>
@@ -71,7 +71,7 @@
       </view>
       <view class="row">
         <button class='class_button'>
-          红包
+          报销
         </button>
       </view>
     </view>

@@ -31,7 +31,13 @@
   margin-top: 10rpx;
   margin-left: 20rpx;
   margin-right: 10rpx;
+  border-width:0;
+  padding: 2rpx 15rpx;
+  font-size: 30rpx;
 }
+
+
+
 
 #dao {
   margin-top: 28rpx;
@@ -57,12 +63,7 @@
   margin-right: 20rpx;
 }
 
-.button_wrapper {
-  padding: 2rpx 15rpx;
-  font-size: 35rpx;
-  border: 6rpx solid #eee;
-  /* border: 0;  */
-}
+
 
 .flex_line {
   display: flex;
@@ -70,17 +71,17 @@
 }
 
 .card {
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  margin: 20rpx 20rpx;
-  box-shadow: 4px 1px 10px #ccc;
+  /* border: 2px solid #ddd; */
+  /* border-radius: 10px; */
+  margin: 0rpx 0rpx;
+  /* box-shadow: 4px 1px 10px #ccc; */
 }
 
 .card_bottom {
   border: 2px solid #ddd;
-  border-radius: 10px;
-  margin: 20rpx 20rpx 0rpx 20rpx;
-  box-shadow: 4px 1px 10px #ccc;
+  /* border-radius: 10px; */
+  margin: 0rpx 0rpx 0rpx 0rpx;
+  /* box-shadow: 4px 1px 10px #ccc; */
 }
 
 .flex_col {
@@ -140,9 +141,20 @@
   align-items: flex-end; /* 底部对齐 */
 }
 
+.num_options{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
 .num {
-  font-size: 100rpx;
+  font-size: 75rpx;
   text-align: center;
+}
+
+.icon_options{
+  height: 85rpx;
+  width: 85rpx;
 }
 
 .plan {
@@ -183,7 +195,7 @@
 .fix_bottom {
   position: fixed;
   bottom: 0;
-  width: 710rpx;
+  width: 100%;
 }
 
 .board_unfixed {
@@ -260,9 +272,6 @@
   text-align: right;
 }
 
-.page {
-  /* background-color: #d9b3ff;  */
-}
 
 .user_detail_card {
   background-color: #ccf;

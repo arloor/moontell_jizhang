@@ -11,11 +11,11 @@ page{
 }
 
 .book{
-  background-color: #ddd;
-  border: 2px solid #999;
-  border-radius: 10px;
+  background-color: #eee;
+  border: 1rpx solid #999;
+  border-radius: 20rpx;
   margin: 0rpx 20rpx 20rpx 20rpx;
-  box-shadow: 4px 1px 10px #999;
+  /* box-shadow: 4px 1px 10px #999; */
   font-size: 45rpx;
 }
 

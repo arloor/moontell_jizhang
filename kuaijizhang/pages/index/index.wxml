@@ -3,8 +3,9 @@
   <view class="card_total">
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
-        <picker mode="date" value="{{date}}" start="2018-01" end="2050-12" >
-          <button class="zhangben button_wrapper">默认账本
+        <picker mode="date" value="{{date}}" start="2018-01" end="2050-12">
+          <button class="zhangben button_wrapper">
+            默认账本
             <image src='/icons/down.png' class="icon"></image>
           </button>
         </picker>
@@ -54,8 +55,8 @@
       </view>
     </view>
   </view>
-  <view class='br'>
-  </view>
+  <!-- <view class='br'>
+  </view> -->
 
   <view class='card card_pay' data-ooo='1' style="dispaly:float;left:-500rpx;" catchlongpress='longPressCard'>
     <view class='type_time'>
