@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kuaijizhang/kuaijizhang.iml" filepath="$PROJECT_DIR$/kuaijizhang/kuaijizhang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhang_api/zhang_api.iml" filepath="$PROJECT_DIR$/zhang_api/zhang_api.iml" />
     </modules>
   </component>
 </project>
