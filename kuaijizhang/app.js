@@ -1,5 +1,7 @@
 //app.js
 App({
+  // apiBase:"https://localhost",
+  apiBase:"https://api.moontell.cn",
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -10,6 +12,25 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        var app=this;
+        wx.request({
+          url: this.apiBase +'/users/openId?js_code='+res.code,
+          success:function(res){
+            if (res.data.errcode){
+              console.log("获取openId失败",res.data.errmsg);
+            }else{
+              // console.log(res.data);
+              app.globalData.openId=res.data.openid;
+              console.log("全局openId",app.globalData.openId)
+            }
+
+            // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+            // 所以此处加入 callback 以防止这种情况
+            if (app.openIdReadyCallback) {
+              app.openIdReadyCallback(res)
+            }
+          }
+        })
       }
     })
     // 获取用户信息
@@ -34,6 +55,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    openId:""
   }
 })

@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ZhangApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="zhang_api" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.arloor.zhang.ZhangApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method />
+  </configuration>
+</component>

@@ -29,17 +29,18 @@
         </view>
       </view>
       <view class='flex_col'>
-        <picker mode="date" value="2018-07" fields="month" start="2018-01" end="2050-12">
+        <picker mode="date" value="{{year}}-{{month}}" fields="month" start="2018-01" end="2050-12">
           <view>
-          <image src='/icons/down.png' class="icon"></image>
-            <text>2018-07</text>
+            <image src='/icons/down.png' class="icon"></image>
+            <text>{{year}}-{{month}}</text>
             <!-- <text>总计</text> -->
             <!-- <image src='/icons/down.png' class="icon"></image> -->
           </view>
 
         </picker>
         <view class="total">
-          <text>-10086</text>
+        <text wx:if="{{ total >0 }}">+</text>
+          <text>{{total}}</text>
         </view>
       </view>
       <view class='flex_col'>
@@ -57,366 +58,50 @@
   <!-- <view class='br'>
   </view> -->
 
-  <view class='card card_pay' data-ooo='1' catchlongpress='longPressCard'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
+      <view wx:if="{{ !records}}" class='card card_earn'>
+
+
+      <view class='num_options'>
+        <!-- <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image> -->
+        <view class='num'>
+          <text>本月还没有记录哦</text>
+          <text wx:if="{{record.planed}}" class="plan">计划</text>
+        </view>
+        <!-- <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image> -->
       </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
+
+
     </view>
 
-    <view class='num_options'>
-      <!-- <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image> -->
-      <view class='num'>
-        <text>-3456</text>
-        <text class="plan">计划</text>
+  <view wx:for="{{records}}" wx:key="recordId" wx:for-item="record">
+    <view class='card card_{{record.type}}' data-ooo='{{record.recordId}}' catchlongpress='longPressCard'>
+      <view class='type_time'>
+        <view class="type">
+          <text class='padding_left'>{{record.majorClass}}:{{record.minorClass}}</text>
+        </view>
+        <view class='time margin_right'>
+          <text class='padding_right'>{{record.month}}-{{record.date}} {{record.time}}</text>
+        </view>
       </view>
-      <!-- <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image> -->
-    </view>
+
+      <view class='num_options'>
+        <!-- <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image> -->
+        <view class='num'>
+          <text wx:if="{{ record.type == 'pay'}}">-</text>
+          <text wx:else>+</text>
+          <text>{{record.num}}</text>
+          <text wx:if="{{record.planed}}" class="plan">计划</text>
+        </view>
+        <!-- <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image> -->
+      </view>
 
 
-    <view class='info'>
-      <text>给欢欢买衣服</text>
+      <view class='info'>
+        <text>{{record.info}}</text>
+      </view>
     </view>
   </view>
 
-  <view class='card card_earn'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>+520</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
 
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-10086</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-200</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-345</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_earn'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>+520</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-10086</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-200</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-345</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_earn'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>+520</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-10086</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-200</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-345</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_earn'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>+520</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-10086</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-200</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-345</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_earn'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>+520</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-10086</text>
-      <text class="plan">计划</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
-
-  <view class='card card_pay'>
-    <view class='type_time'>
-      <view class="type">
-        <text class='padding_left'>大类：小类</text>
-      </view>
-      <view class='time margin_right'>
-        <text class='padding_right'>08-09 10：08</text>
-      </view>
-    </view>
-    <view class='num'>
-      <text>-200</text>
-    </view>
-    <view class='info'>
-      <text>给欢欢买衣服</text>
-    </view>
-  </view>
 
 </view>
