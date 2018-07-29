@@ -88,6 +88,7 @@
   display: flex;
   text-align: center;
   flex-flow: column;
+  align-items: center;
 }
 
 .title {

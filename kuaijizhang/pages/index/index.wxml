@@ -31,10 +31,10 @@
       <view class='flex_col'>
         <picker mode="date" value="2018-07" fields="month" start="2018-01" end="2050-12">
           <view>
+          <image src='/icons/down.png' class="icon"></image>
             <text>2018-07</text>
-
-            <text>总计</text>
-            <image src='/icons/down.png' class="icon"></image>
+            <!-- <text>总计</text> -->
+            <!-- <image src='/icons/down.png' class="icon"></image> -->
           </view>
 
         </picker>
