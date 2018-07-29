@@ -58,7 +58,7 @@
   <!-- <view class='br'>
   </view> -->
 
-      <view wx:if="{{ !records}}" class='card card_earn'>
+      <view wx:if="{{ !hasRecord}}" class='card card_earn'>
 
 
       <view class='num_options'>
