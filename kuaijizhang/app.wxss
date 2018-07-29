@@ -78,7 +78,7 @@
 }
 
 .card_bottom {
-  border: 2px solid #ddd;
+  border: 1px solid #ddd;
   /* border-radius: 10px; */
   margin: 0rpx 0rpx 0rpx 0rpx;
   /* box-shadow: 4px 1px 10px #ccc; */
@@ -186,7 +186,7 @@
 .flex_line_beizhu {
   display: flex;
   justify-content: flex-start;
-  border: 3rpx solid #ccc;
+  border: 1rpx solid #ccc;
   font-size: 40rpx;
   padding: 15rpx 20rpx;
   line-height: 2.000;
