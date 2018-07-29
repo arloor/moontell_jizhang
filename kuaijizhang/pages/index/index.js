@@ -112,8 +112,11 @@ Page({
 
   },
 
+
   load: function () {
-    // wx.showLoading({})
+    wx.showLoading({
+      title:"拼命加载中"
+    })
     var that = this;
     console.log("测试是不是index", this.data.openId)
     
@@ -140,7 +143,9 @@ Page({
     })
   },
   loadNew: function () {
-    // wx.showLoading()
+    // wx.showLoading({
+    //   title: "拼命加载中"
+    // })
     var that = this
     var varUrl = app.apiBase + "/records?openId=" + this.data.openId + "&year=" + this.data.year + "&month=" + this.data.month + "&option=new&maxId=" + this.data.maxId + "&bookId=0"
 
@@ -155,16 +160,6 @@ Page({
             image:"/icons/tongzhi.png",
             duration: 1000
           })
-          // wx.showModal({
-          //   content: '没有更新的记录啦',
-          //   showCancel: false,
-          //   success: function (res) {
-          //     if (res.confirm) {
-          //       console.log('用户点击确定')
-
-          //     }
-          //   }
-          // })
           return;
         }
         console.log("查询到的记录", res.data);
@@ -181,7 +176,9 @@ Page({
   },
 
   loadOld: function () {
-    // wx.showLoading()
+    wx.showLoading({
+      title: "拼命加载中"
+    })
     var that = this
     var varUrl = app.apiBase + "/records?openId=" + this.data.openId + "&year=" + this.data.year + "&month=" + this.data.month + "&option=old&minId=" + this.data.minId + "&bookId=0"
 
@@ -189,7 +186,7 @@ Page({
       url: varUrl,
       success: function (res) {
         if (res.data.length == 0) {
-          // wx.hideLoading()
+          wx.hideLoading()
           wx.stopPullDownRefresh();
           wx.showToast({
             title: '没有更旧的啦~',
@@ -205,7 +202,7 @@ Page({
           minId: res.data[res.data.length - 1].recordId
         })
         console.log("records:", that.data.maxId, "--", that.data.minId);
-        // wx.hideLoading()
+        wx.hideLoading()
       }
     })
   }
