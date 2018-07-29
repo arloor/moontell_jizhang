@@ -1,5 +1,5 @@
 <!-- <image class="totop icon_opr" src='/icons/totop.png'  catchtap='totop'></image>  -->
-<view class='' catchtap='anyTap'>
+<view>
   <view class="card_total">
     <view class="flex_line">
       <view class="block_wrapper  margin_left">
@@ -29,7 +29,6 @@
         </view>
       </view>
       <view class='flex_col'>
-        <!-- <view class='title'>当月</view> -->
         <picker mode="date" value="2018-07" fields="month" start="2018-01" end="2050-12">
           <view>
             <text>2018-07</text>
@@ -69,12 +68,12 @@
     </view>
 
     <view class='num_options'>
-      <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image>
+      <!-- <image class="icon_options" src='/icons/delete.png' catchtap='doDelete'></image> -->
       <view class='num'>
         <text>-3456</text>
         <text class="plan">计划</text>
       </view>
-      <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image>
+      <!-- <image class="icon_options" src='/icons/edit.png' catchtap='doEdit'></image> -->
     </view>
 
 
